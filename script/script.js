@@ -3,7 +3,7 @@ const nav = document.querySelector(".nav");
 const blob = document.querySelector(".color-blob");
 const navList = document.querySelector(".nav-list");
 
-btn.addEventListener("click", (e) => {
+btn.addEventListener("click", () => {
 	if (nav.style.display === "none") {
 		nav.style.display = "block";
 		blob.classList.add("dark");
