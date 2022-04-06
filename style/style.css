@@ -270,8 +270,10 @@ Desktop and media queries
 */
 
 @media (min-width: 700px) {
+	/* Nav + hero */
 	.header {
 		align-items: center;
+		box-shadow: 5px 5px 5px gray;
 	}
 
 	.header > button:nth-of-type(1) {
@@ -330,10 +332,142 @@ Desktop and media queries
 		width: 50%;
 		text-align: left;
 		margin-top: 4rem;
-		padding: 3%;
+		padding-left: 2rem;
 	}
 
 	.color-blob {
 		width: 50%;
+	}
+
+	/* About */
+	.about-intro {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.offers {
+		display: flex;
+		gap: 2rem;
+	}
+
+	/* Articles */
+
+	.article-container {
+		display: flex;
+		flex: 1;
+		flex-flow: wrap;
+	}
+	article {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1000px) {
+	/* Header */
+	.header {
+		justify-content: space-around;
+	}
+
+	/* Hero */
+
+	.intro {
+		width: 40%;
+		align-self: center;
+		margin: 0 auto;
+	}
+
+	.color-blob {
+		background-image: url(/images/bg-intro-desktop.svg);
+		background-repeat: no-repeat;
+		background-position: 2rem -2rem;
+	}
+
+	.header {
+		z-index: 2;
+		padding: 0.5rem;
+	}
+
+	.image {
+		width: 100%;
+		min-height: 35rem;
+		z-index: 0;
+		overflow: visible;
+	}
+
+	.main {
+		overflow: hidden;
+	}
+	.mockup {
+		width: 100%;
+		top: -7rem;
+		left: 50%;
+		transform: translate(-33%);
+		min-height: 50rem;
+		z-index: 1;
+	}
+
+	/* About */
+
+	.about {
+		text-align: left;
+		padding: 3rem;
+	}
+
+	.about-intro {
+		text-align: left;
+		width: 50%;
+		margin: 0;
+	}
+	/* Articles */
+
+	.articles {
+		padding: 1rem;
+	}
+
+	.articles-heading {
+		text-align: left;
+		padding-left: 1rem;
+		font-size: var(--step-3);
+	}
+
+	.article-container {
+		flex-wrap: nowrap;
+	}
+
+	/* footer */
+
+	.container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.footer-nav-ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: left;
+		margin-left: 5rem;
+	}
+
+	.footer-nav-item {
+		width: 40%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.main-title {
+		font-size: var(--step-3);
+	}
+	.intro {
+		font-size: var(--step-1);
+	}
+
+	.subheading {
+		font-size: var(--step-3);
+	}
+
+	.text {
+		font-size: var(--step-1);
 	}
 }
